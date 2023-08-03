@@ -1,0 +1,136 @@
+.buttons-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.buttons-container .label-container {
+  display: inline-block;
+  font-family: 'Proxima Nova Bold';
+  font-size: 16px;
+  -webkit-box-flex: 1;
+  color: #0E1F3D;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.year-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  padding: 5px 20px;
+}
+
+.prev-button,
+.next-button {
+  border: none;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  background: #1c6084;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  color: transparent;
+}
+
+.week {
+  margin: 10px 0;
+}
+
+.week.highlight {
+  border-radius: 5px;
+}
+
+.week .day.header {
+  font-size: 16px;
+  font-family: 'Proxima Nova Regular';
+  text-transform: uppercase;
+  color: #BFBFBF;
+}
+
+.day span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.day.today span {
+  position: relative;
+  display: inline-block;
+  font-size: 110%;
+}
+
+/* weekend */
+.week:not(.start-on-monday) .day:first-child,
+.week:not(.start-on-monday) .day:last-child {
+  color: orange;
+}
+
+/* sunday */
+.week:not(.start-on-monday) .day:first-child {
+  color: red;
+}
+
+.day.today span::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid white;
+  width: 10px;
+  height: 1px;
+}
+
+.day.sunday span {
+  color: #ff8a80;
+}
+
+
+.week .day.selected span {
+  background: #1c6084;
+  color: white;
+}
+
+.week .day[disabled="disabled"] span {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.months-wrapper .month span {
+  display: inline-block;
+  padding: 10px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.special-buttons {
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+}
+
+.today-button {
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+  padding: 5px;
+}

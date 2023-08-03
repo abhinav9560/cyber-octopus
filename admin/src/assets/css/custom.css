@@ -1,0 +1,46 @@
+.container{
+    height: 100vh;
+    /* overflow: hidden; */
+    width: 100%;
+    margin: 0;
+    max-width:100% !important
+}
+.auth{
+    margin-top: 15%;
+}
+a {
+    color: #5d8ef9;
+}
+a:hover, a:focus {
+    color: #5d8ef9;
+    text-decoration: none;
+}
+
+.errorText {
+    color: red;
+    font-size: 15px;
+}
+.default-input-class{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.PhoneInputInput{
+    border: 0;
+}
+
+@media (min-width: 992px){
+    .navbar-nav .nav-item .dropdown-menu:after {
+        left: 100px !important; 
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-nav .nav-item .dropdown-menu:before {
+        left: 100px !important;
+    }
+}
+
+.cardHeading {
+  margin: 0px 0 0px; 
+}
+

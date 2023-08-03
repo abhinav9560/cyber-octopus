@@ -1,0 +1,59 @@
+{
+  "name": "cyber-octopus-admin",
+  "version": "2.0.0",
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^30.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "@fortawesome/fontawesome-free": "5.15.2",
+    "axios": "^0.21.4",
+    "bootstrap": "4.6.0",
+    "chart.js": "^3.7.0",
+    "formik": "^2.2.9",
+    "moment": "^2.29.1",
+    "node-sass": "^4.0.0",
+    "react": "17.0.1",
+    "react-bootstrap": "1.4.3",
+    "react-chartjs-2": "^4.0.1",
+    "react-datepicker": "^4.2.1",
+    "react-dom": "17.0.1",
+    "react-js-pagination": "^3.0.3",
+    "react-loader-spinner": "^4.0.0",
+    "react-phone-number-input": "^3.1.27",
+    "react-redux": "^7.2.5",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.1",
+    "react-toastify": "^7.0.4",
+    "redux": "^4.1.1",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "optionalDependencies": {
+    "jquery": "3.5.1",
+    "reactstrap": "8.9.0",
+    "typescript": "4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile:scss": "node-sass src/assets/scss/light-bootstrap-dashboard-react.scss src/assets/css/light-bootstrap-dashboard-react.css",
+    "minify:scss": "node-sass src/assets/scss/light-bootstrap-dashboard-react.scss src/assets/css/light-bootstrap-dashboard-react.min.css --output-style compressed",
+    "map:scss": "node-sass src/assets/scss/light-bootstrap-dashboard-react.scss src/assets/css/light-bootstrap-dashboard-react.css --source-map true",
+    "build:scss": "npm run compile:scss && npm run minify:scss && npm run map:scss"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

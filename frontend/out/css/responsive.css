@@ -1,0 +1,21 @@
+@media only screen and (min-width:768px) and (max-width:1169px){}
+@media only screen and (min-width:0px) and (max-width:767px){}
+@media (min-width: 992px){
+button#menu-button {display: none;}
+a#close {display: none;}}
+@media (max-width: 1199px){
+
+}
+@media (max-width: 991px){
+button.navbar-toggler{position:absolute;right:0}
+.submenu-submenu{padding:15px 0}
+a#close{position:absolute;top:0;right:0;font-size:36px;color:#fff;border:0}
+.hide-menu{background-color:#000;position:fixed;top:0;left:-350px;z-index:9;width:300px;height:100%;transition:.3s;padding-top:40px}
+.show-menu{transition:.5s;left:0;margin-left:0}
+
+}
+
+
+@media (max-width: 767px){}
+@media (max-width: 575px){}
+@media (max-width: 480px){}

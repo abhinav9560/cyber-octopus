@@ -1,0 +1,63 @@
+.errorText {color: red;}
+
+.showDropdown{display: block;}
+.hideDropdown{display: none;}
+
+.signupbutton{
+    line-height: 35px;
+    border-radius: 8px;
+    border: none;
+    min-width: 130px;
+    background: #1c6084;
+    color: white;
+}
+
+.octopus-info-dtl {
+    left: 50% !important;
+    top: 5% !important; 
+}
+
+.octopus-info-dtl h6 {
+    font-size: 16px !important;
+}
+.after-login-detail-list a.item-dtl-blk {
+    justify-content: space-between;
+}
+.inbetween{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+}
+.page-link {
+    color: #1c6084 !important;
+}
+.page-item.active .page-link {
+    color: white !important;
+    background-color:#1c6084 !important;
+    border-color:#1c6084 !important;
+}
+.paginate{
+    margin-top: 12px;
+}
+.items-tag{
+    cursor: pointer;
+}
+.facebook-bg{
+    margin: 4px;
+}
+
+.linkedin-bg{
+    margin: 4px;
+}
+
+.twitter-bg{
+    margin: 4px;
+}
+.icons-social{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 1px 15px 1px;
+}
